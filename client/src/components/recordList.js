@@ -1,4 +1,3 @@
-// viewing component for our records
 import React, { useEffect, useState } from "react";
 
 // Create a component to show client input in a single record

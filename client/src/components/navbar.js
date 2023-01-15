@@ -4,7 +4,7 @@ import logo from "../images/logo.jpeg";
 // Import NavLink to utilize the react router
 import { NavLink } from "react-router-dom";
 
-// Display the Navbar
+// Display the Navbar based on window size
 export default function Navbar() {
   return (
     <div>

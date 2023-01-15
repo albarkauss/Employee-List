@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// returns a function that lets you navigate programmatically
 import { useNavigate } from "react-router";
 
 // Create component
@@ -8,7 +9,7 @@ export default function Create() {
     firstName: "",
     lastName: "",
     email: "",
-    level: "",
+    gender: "",
   });
   // Get navigate function to navigate to different routes
   const navigate = useNavigate();
@@ -24,7 +25,8 @@ export default function Create() {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    // When a post request is sent to the create url, it will add a new record to the database
+    // When a post request is sent to the create url,
+    // it will add a new record to the database
     const newPerson = { ...form };
 
     // Send a post request to the server with the form data
@@ -39,7 +41,7 @@ export default function Create() {
       return;
     });
 
-    // Clear the form and navigate to the record list page
+    // Update form and navigate to the record list page
     setForm({ firstName: "", lastName: "", email: "", gender: "" });
     navigate("/record");
   };
