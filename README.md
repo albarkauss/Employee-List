@@ -1,15 +1,22 @@
-# Employee-List
+# Create Employee Record App
 
-Start server:
+### Step 1
+
+Start Node server:
 ```
-cd mern/server
+cd Employee-List/server
+```
+
+```
 npm install
 npm start
 ```
 
-Start Web server
+### Step 2
+
+Start React App:
 ```
-cd mern/client
+cd Employee-List/client
 npm install
 npm start
 ```
