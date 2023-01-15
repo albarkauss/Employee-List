@@ -1,8 +1,9 @@
 # Create Employee Record App  📑
 
-
+![DEMO](https://user-images.githubusercontent.com/119751609/212564591-1982f859-ea14-4776-8032-7f2817e68367.gif)
 
 ## Description ✒️
+
 
 This is an application allows you to create and visualize employees. The frontend is built using ReactJS, and the backend is built using ExpressJS. The data is stored into a MongoDB database.
 
