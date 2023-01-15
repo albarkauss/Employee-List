@@ -1,0 +1,18 @@
+.central-div {
+  padding: 5% 15%;
+}
+
+.form-group {
+  margin-top: 2%;
+}
+
+.ddm {
+  transform: translateY(4px);
+  width: 1006px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 150px;
+  background-color: #fff;
+}
