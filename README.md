@@ -22,7 +22,7 @@ To run this application, you will need to have NodeJS installed on your machine.
 
 > **_NOTE:_** If you don't have NodeJS installed: https://nodejs.org/en/download/
 
-1. Clone the repository running `git clone`
+1. Clone the repository running `git clone https://github.com/albarkauss/Employee-List.git`
 #### Start Node server  
 2. In the root directory of the project, run `cd server`
 3. Run `npm install` to install the necessary dependencies
