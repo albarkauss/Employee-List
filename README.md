@@ -34,9 +34,13 @@ Successfully connected to MongoDB.
 ```
 
 #### Start React App
-5. In the root directory of the project, run `cd client`
-6. Run `npm install` to install the necessary dependencies
-7. Start the client by running `npm start`
-8. The application can be accessed at `http://localhost:3000` in your browser
+6. In the root directory of the project, run `cd client`
+7. Run `npm install` to install the necessary dependencies
+8. Start the client by running `npm start`
+9. The application can be accessed at `http://localhost:3000` in your browser
+10. If successfull you will see in terminal:
+```
+webpack compiled successfully
+```
 
 
