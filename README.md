@@ -1,6 +1,6 @@
 # Create Employee Record App  📑
 
-![](https://github.com/albarkauss/Employee-List/demo.gif)
+
 
 ## Description ✒️
 
