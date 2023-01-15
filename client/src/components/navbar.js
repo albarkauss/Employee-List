@@ -1,45 +1,26 @@
 import React from "react";
 
-// We import bootstrap to make our application look better.
-import "bootstrap/dist/css/bootstrap.css";
-
 import logo from "../images/logo.jpeg";
-// We import NavLink to utilize the react router.
+// Import NavLink to utilize the react router
 import { NavLink } from "react-router-dom";
 
-// Here, we display our Navbar
+// Display the Navbar
 export default function Navbar() {
-  const [showMenu, setShowMenu] = React.useState(false);
-
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light content-navbar">
         <NavLink className="navbar-brand" to="/">
           <img style={{ width: 25 + "%" }} alt="" src={logo}></img>
         </NavLink>
-        {showMenu && (
-          <ul className="nav-menu mr-auto">
-            <li className="nav-item " href="/">
-              <NavLink className="nav-link" to="/">
-                Create New Employee
-              </NavLink>
-            </li>
-            <li className="nav-item ">
-              <NavLink className="nav-link" to="/record">
-                Employee List
-              </NavLink>
-            </li>
-          </ul>
-        )}
+
         <button
           className="navbar-toggler"
           type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={() => setShowMenu((showMenu) => !showMenu)}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -48,13 +29,13 @@ export default function Navbar() {
           className="collapse navbar-collapse justify-content-end"
           id="navbarSupportedContent"
         >
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item">
+          <ul className="navbar-nav">
+            <li className="nav-item li-right">
               <NavLink className="nav-link" to="/">
                 Create New Employee
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item li-right">
               <NavLink className="nav-link" to="/record">
                 Employee List
               </NavLink>

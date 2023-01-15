@@ -1,6 +1,7 @@
 // viewing component for our records
 import React, { useEffect, useState } from "react";
 
+// Create a component to show client input in a single record
 const Record = (props) => (
   <tr>
     <td>{props.record.firstName}</td>
@@ -10,14 +11,17 @@ const Record = (props) => (
   </tr>
 );
 
+// Create the main component for displaying the records
 export default function RecordList() {
+  // Initialize state to store the records
   const [records, setRecords] = useState([]);
 
-  // This method fetches the records from the database.
+  // This fetches the records from the server
   useEffect(() => {
     async function getRecords() {
       const response = await fetch(`http://localhost:5001/record/`);
 
+      // If there is an error show a message
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         window.alert(message);
@@ -33,18 +37,18 @@ export default function RecordList() {
     return;
   }, [records.length]);
 
-  // This method will map out the records on the table
+  // This function will map out the records on the table
   function recordList() {
     return records.map((record) => {
       return <Record record={record} key={record._id} />;
     });
   }
 
-  // This following section will display the table with the records of individuals.
+  // This section will display the table with the records of employees
   return (
-    <div>
+    <div className="central-div">
       <h3>Employee List</h3>
-      <table className="table table-striped" style={{ marginTop: 20 }}>
+      <table className="table table-hover" style={{ marginTop: 20 }}>
         <thead>
           <tr>
             <th>First Name</th>

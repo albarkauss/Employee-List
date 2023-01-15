@@ -1,34 +1,33 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 
-// import css style file
-import "../styles/create.css";
-
+// Create component
 export default function Create() {
-  // const { register, errors, handleSubmit } = useForm({ mode: "onBlur" });
-
+  // Initialize state to store form data
   const [form, setForm] = useState({
     firstName: "",
     lastName: "",
     email: "",
     level: "",
   });
+  // Get navigate function to navigate to different routes
   const navigate = useNavigate();
 
-  // These methods will update the state properties.
+  // These methods will update the state properties
   function updateForm(value) {
     return setForm((prev) => {
       return { ...prev, ...value };
     });
   }
 
-  // This function will handle the submission.
+  // This function will handle the submission
   const onSubmit = async (e) => {
     e.preventDefault();
 
-    // When a post request is sent to the create url, we'll add a new record to the database.
+    // When a post request is sent to the create url, it will add a new record to the database
     const newPerson = { ...form };
 
+    // Send a post request to the server with the form data
     await fetch("http://localhost:5001/record/add", {
       method: "POST",
       headers: {
@@ -40,11 +39,12 @@ export default function Create() {
       return;
     });
 
-    setForm({ firstName: "", lastName: "", email: "", gende: "" });
+    // Clear the form and navigate to the record list page
+    setForm({ firstName: "", lastName: "", email: "", gender: "" });
     navigate("/record");
   };
 
-  // This following section will display the form that takes the input from the user.
+  // This section will display the form that takes the input from the user
   return (
     <div className="central-div">
       <h3>Create New Employee</h3>
@@ -86,7 +86,7 @@ export default function Create() {
           <label htmlFor="gender">Gender</label>
           <br></br>
           <select
-            className="ddm"
+            className="dropdown-menubar"
             value={form.gender}
             id="gender"
             onChange={(e) => updateForm({ gender: e.target.value })}

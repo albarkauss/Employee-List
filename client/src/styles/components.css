@@ -1,0 +1,29 @@
+/******* Common *******/
+.central-div {
+  padding: 5% 15%;
+}
+
+/******* create.js *******/
+.form-group {
+  margin-top: 2%;
+}
+
+.dropdown-menubar {
+  transform: translateY(4px);
+  width: 1006px;
+  height: 36px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 150px;
+  background-color: #fff;
+}
+
+/******* navbar.js *******/
+.content-navbar {
+  padding: 1%;
+}
+
+.li-right {
+  text-align: right;
+}
