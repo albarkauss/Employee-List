@@ -23,11 +23,17 @@ To run this application, you will need to have NodeJS installed on your machine.
 > **_NOTE:_** If you don't have NodeJS installed: https://nodejs.org/en/download/
 
 1. Clone the repository running `git clone`
-##### Start Node server  
+#### Start Node server  
 2. In the root directory of the project, run `cd server`
 3. Run `npm install` to install the necessary dependencies
 4. Start the server by running `npm start`
-##### Start React App
+5. If successfull you will see: 
+```
+Server is running on port: 5001
+Successfully connected to MongoDB.
+```
+
+#### Start React App
 5. In the root directory of the project, run `cd client`
 6. Run `npm install` to install the necessary dependencies
 7. Start the client by running `npm start`
