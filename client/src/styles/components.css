@@ -10,7 +10,7 @@
 
 .dropdown-menubar {
   transform: translateY(4px);
-  width: 1006px;
+  width: 100%;
   height: 36px;
   border: 1px solid #ccc;
   border-radius: 5px;
