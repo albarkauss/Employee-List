@@ -4,7 +4,6 @@
 
 ## Description ✒️
 
-
 This is an application allows you to create and visualize employees. The frontend is built using ReactJS, and the backend is built using ExpressJS. The data is stored into a MongoDB database.
 
 ### Frontend
@@ -26,7 +25,7 @@ To run this application, you will need to have NodeJS installed on your machine.
 
 > **_NOTE:_** If you don't have NodeJS installed: https://nodejs.org/en/download/
 
-1. Clone the repository running `git clone https://github.com/albarkauss/Employee-List.git`
+1. Open your terminal and clone the repository running `git clone https://github.com/albarkauss/Employee-List.git`
 #### Start Node server  
 2. In the root directory of the project, run `cd server`
 3. Run `npm install` to install the necessary dependencies
@@ -38,7 +37,9 @@ Successfully connected to MongoDB.
 ```
 
 #### Start React App
-6. In the root directory of the project, run `cd client`
+Ensure that the server app is still running. If it’s not, start by executing `npm start` in the server/ directory
+
+6. Open a new terminal and navigate to the client folder, running `cd client`
 7. Run `npm install` to install the necessary dependencies
 8. Start the client by running `npm start`
 9. The application can be accessed at `http://localhost:3000` in your browser
