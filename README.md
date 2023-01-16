@@ -4,7 +4,7 @@
 
 ## Description ✒️
 
-This is an application allows you to create and visualize employees. The frontend is built using ReactJS, and the backend is built using ExpressJS. The data is stored into a MongoDB database.
+This is an application that allows you to create and visualize employees. The frontend is built using ReactJS, and the backend is built using ExpressJS. The data is stored into a MongoDB database.
 
 ### Frontend
 The frontend is built using ReactJS, which allows for a dynamic and responsive user interface.
