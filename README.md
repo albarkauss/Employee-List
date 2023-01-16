@@ -4,24 +4,24 @@
 
 ## Description ✒️
 
-This is an application that allows you to create and visualize employees. The frontend is built using ReactJS, and the backend is built using ExpressJS. The data is stored into a MongoDB database.
+This is an application that allows you to create and visualize employees. The frontend is built using React, and the backend is built using Express.js. The data is stored into a MongoDB database.
 
 ### Frontend
-The frontend is built using ReactJS, which allows for a dynamic and responsive user interface.
+The frontend is built using React, which allows for a dynamic and responsive user interface.
 - There are input fields for email, first name, last name, and a dropdown to select the employee's gender.
 - By clicking the submit button, the data is sent to the backend for storage in the database.
 - If any of the required information is missing, an error message will appear and the data will not be sent to the backend.
 
 ### Backend 
-The backend is built using NodeJS and Express framework, which allows for efficient handling of data and communication with the frontend.
+The backend is built using Node.js and Express.js framework, which allows for efficient handling of data and communication with the frontend.
 Data received from the frontend is stored in a database. MongoDB Atlas is used as the database, which is a cloud-based database service that allows for easy and secure storage of data.
 
 ### Conclusion
-This application is a simple and easy way to manage employee data. By using ReactJS and NodeJS, the application is efficient and user-friendly. With MongoDB Atlas, the data is securely stored and can be easily accessed.
+This application is a simple and easy way to manage employee data. By using React and Express.js, the application is efficient and user-friendly. With MongoDB Atlas, the data is securely stored and can be easily accessed.
 
 
 ## Getting started 👩🏽‍💻
-To run this application, you will need to have NodeJS installed on your machine.
+To run this application, you will need to have Node.js installed on your machine.
 
 > **_NOTE:_** If you don't have NodeJS installed: https://nodejs.org/en/download/
 
